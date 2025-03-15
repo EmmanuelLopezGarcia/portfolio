@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block container1 %}
+
+    {% for experience in experiences %}
+
+        <div class="jumbtron jumbtron-fluid mt-2">
+
+            <h1 class="display4"> {{ experience.company }} </h1>
+
+            <h2 class="display3"> {{ experience.position }} </h2>
+
+            <p class="lead"> {{ experience.duties }} </p>
+
+
+        </div>
+
+    {% endfor %}
+
+{% endblock container1 %}

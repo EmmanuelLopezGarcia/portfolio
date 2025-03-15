@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block container1 %}
+
+
+
+    {% for certification in certifications %}
+
+        <h1 class="display4 d-flex align-items-center justify-content-center text-center" style="font-size: 30px"> 
+            {{ certification.title }} 
+        </h1>
+
+        <div class="jumbtron jumbtron-fluid mt-2 d-flex align-items-center justify-content-center text-center">
+
+            <img src="{% static certification.image %}" width="500" height="800" class="img-fluid align-items-center">
+            
+        </div>
+
+    {% endfor %}
+
+
+
+{% endblock container1 %}
