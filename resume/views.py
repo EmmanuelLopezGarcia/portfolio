@@ -4,9 +4,9 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 
 # Create your views here.
 
-def home(request):
+def index(request):
 
-    return render (request, "home.html")
+    return render (request, "index.html")
 
 
 def about(request):
